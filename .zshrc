@@ -80,7 +80,7 @@ source $ZSH/oh-my-zsh.sh
 ##########################
 
 # alias for dot file repo
-alias dotfiles='git --git-dir=$HOME/Repos/dotfiles-repo/.git --work-tree=$HOME'
+alias dotfiles='git --git-dir=$HOME/Repos/dotfiles/.git --work-tree=$HOME'
 
 # python aliases
 alias python='/usr/bin/python3'
