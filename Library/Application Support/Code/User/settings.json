@@ -79,6 +79,10 @@
   "gitlens.integrations.enabled": true,
   "gitlens.views.commitDetails.files.layout": "tree",
   /**
+  Bun settings
+  */
+  "bun.debugTerminal.enabled": true,
+  /**
   Code Runner extension settings
   */
   "code-runner.executorMapByGlob": { // run JavaScript & TypeScript files w/ Bun
