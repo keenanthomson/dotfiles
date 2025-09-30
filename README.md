@@ -94,6 +94,5 @@ dotfiles push
 - ✅ Selective file tracking (only what you choose)
 
 ---
----
 
 *Inspired by [The best way to store your dotfiles: A bare Git repository explained](https://www.ackama.com/articles/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained/) from Ackama.*
