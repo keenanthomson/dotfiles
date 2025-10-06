@@ -22,23 +22,23 @@ This repository uses Git's work tree feature to track dotfiles in their original
 
 ## Setup
 
-### 1. Create a Git repository for your dotfiles
+### 1. Create a Git repository for your dotfiles in your preferred directory
 ```bash
-# update with your preferred directory
-
 mkdir -p $HOME/dotfiles
 cd $HOME/dotfiles
 git init
 ```
 
-### 2. Create the dotfiles alias
+### 2. Create the dotfiles function
 ```bash
-# update with your preferred shell config file
-# if you prefer, you can just manually add the alias to your shell config 
+# Add to your shell config file (e.g., ~/.zshrc)
 
-echo "alias dotfiles='git --git-dir=$HOME/dotfiles'" >> ~/.zshrc
-source ~/.zshrc
+function dotfiles() {
+  /usr/bin/git --git-dir=$HOME/Repos/dotfiles/.git --work-tree=$HOME $@
+}
 ```
+
+Using a function instead of an alias enables parameter support - the `$@` passes all arguments to the git command, allowing you to use any git subcommand and flags naturally (e.g., `dotfiles add -p`, `dotfiles log --oneline`, `dotfiles commit -am "message"`).
 
 ### 3. Configure Git to hide untracked files
 ```bash
