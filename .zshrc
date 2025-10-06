@@ -80,10 +80,12 @@ source $ZSH/oh-my-zsh.sh
 ##########################
 
 # alias for dot file repo
-alias dotfiles='/usr/bin/git --git-dir=$HOME/Repos/dotfiles/.git --work-tree=$HOME'
+function dotfiles() {
+  /usr/bin/git --git-dir=$HOME/Repos/dotfiles/.git --work-tree=$HOME $@
+}
 
 # python aliases
-alias python='/usr/bin/python3'
+alias python=$(which python3.13)
 alias pip='pip3'
 
 # rust aliases
@@ -129,7 +131,7 @@ if [ -f '/Users/kt720t/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kt720t/g
 if [ -f '/Users/kt720t/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kt720t/google-cloud-sdk/completion.zsh.inc'; fi
 
 # gcloud config
-export CLOUDSDK_PYTHON=$(which python3.11)
+export CLOUDSDK_PYTHON=$(which python3.13)
 
 # openssl paths
 export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
