@@ -122,7 +122,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # loads nvm bash_completion
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/kt720t/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kt720t/google-cloud-sdk/path.zsh.inc'; fi
@@ -153,12 +153,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # bun completions
 [ -s "/Users/kt720t/.bun/_bun" ] && source "/Users/kt720t/.bun/_bun"
-
-# Java
-export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
-
-# bat configs
-export BAT_THEME="dracula"
 
 # set zsh as default profile
 export PROFILE="~/.zshrc"
