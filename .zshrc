@@ -151,6 +151,9 @@ export LIBRARY_PATH=/opt/homebrew/Cellar/librdkafka/2.2.0/lib
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+# ~/.local/bin to PATH
+export PATH="$HOME/.local/bin:$PATH"
+
 # bun completions
 [ -s "/Users/kt720t/.bun/_bun" ] && source "/Users/kt720t/.bun/_bun"
 
