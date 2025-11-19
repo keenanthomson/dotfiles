@@ -1,0 +1,90 @@
+{
+  "numStartups": 6,
+  "installMethod": "native",
+  "autoUpdates": false,
+  "tipsHistory": {
+    "new-user-warmup": 2,
+    "plan-mode-for-complex-tasks": 2,
+    "memory-command": 2,
+    "theme-command": 2,
+    "stickers-command": 2,
+    "prompt-queue": 4,
+    "enter-to-steer-in-relatime": 4,
+    "todo-list": 4,
+    "# for memory": 4,
+    "shift-enter": 5,
+    "install-github-app": 6,
+    "drag-and-drop-images": 6
+  },
+  "cachedStatsigGates": {
+    "tengu_migrate_ignore_patterns": false,
+    "tengu_tool_pear": false,
+    "tengu_disable_bypass_permissions_mode": false
+  },
+  "firstStartTime": "2025-11-05T18:17:40.133Z",
+  "sonnet45MigrationComplete": true,
+  "userID": "dc760ca31ac2a62c5a70e3c1252f926b894851adebbbb7bb52c5917e427ac689",
+  "fallbackAvailableWarningThreshold": 0.5,
+  "autoUpdatesProtectedForNative": true,
+  "oauthAccount": {
+    "accountUuid": "91957247-e5e6-4547-8270-3d0e75556b4f",
+    "emailAddress": "keenanthomson@gmail.com",
+    "organizationUuid": "69a3941a-d9c1-4e85-a8ba-544d38bc6d03",
+    "displayName": "Keenan",
+    "organizationBillingType": "stripe_subscription",
+    "organizationRole": "admin",
+    "workspaceRole": null,
+    "organizationName": "keenanthomson@gmail.com's Organization"
+  },
+  "claudeCodeFirstTokenDate": "2025-08-13T21:11:18.775727Z",
+  "shiftEnterKeyBindingInstalled": true,
+  "hasCompletedOnboarding": true,
+  "lastOnboardingVersion": "2.0.33",
+  "projects": {
+    "/Users/keenan/Repos": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "ignorePatterns": [],
+      "projectOnboardingSeenCount": 2,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": []
+    },
+    "/Users/keenan/Repos/keenan": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {
+        "figma": {
+          "type": "http",
+          "url": "https://mcp.figma.com/mcp"
+        }
+      },
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "ignorePatterns": [],
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "exampleFiles": [],
+      "hasCompletedProjectOnboarding": true,
+      "lastTotalWebSearchRequests": 0
+    }
+  },
+  "hasOpusPlanDefault": false,
+  "lastReleaseNotesSeen": "2.0.33",
+  "s1mAccessCache": {
+    "69a3941a-d9c1-4e85-a8ba-544d38bc6d03": {
+      "hasAccess": false,
+      "hasAccessNotAsDefault": false,
+      "timestamp": 1762877634922
+    }
+  },
+  "hasIdeOnboardingBeenShown": {
+    "cursor": true
+  }
+}

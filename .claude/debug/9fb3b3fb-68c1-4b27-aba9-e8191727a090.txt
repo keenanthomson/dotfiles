@@ -1,0 +1,110 @@
+[DEBUG] Watching for changes in setting files /Users/keenan/.claude/settings.json...
+[DEBUG] Applying permission update: Adding 3 allow rule(s) to destination 'userSettings': ["Bash(npm run lint)","Bash(npm run test:*)","Read(~/.zshrc)"]
+[DEBUG] Applying permission update: Adding 4 deny rule(s) to destination 'userSettings': ["Bash(curl:*)","Read(./.env)","Read(./.env.*)","Read(./secrets/**)"]
+[DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+[DEBUG] Writing to temp file: /Users/keenan/.claude.json.tmp.25677.1762543031912
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 1906 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/keenan/.claude.json.tmp.25677.1762543031912 to /Users/keenan/.claude.json
+[DEBUG] File /Users/keenan/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/keenan/.claude.json.tmp.25677.1762543031914
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 1906 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/keenan/.claude.json.tmp.25677.1762543031914 to /Users/keenan/.claude.json
+[DEBUG] File /Users/keenan/.claude.json written atomically
+[DEBUG] Total LSP servers loaded: 0
+[DEBUG] LSP manager initialized with 0 servers
+[DEBUG] LSP server manager initialized successfully
+[DEBUG] Loading skills from directories: managed=/Library/Application Support/ClaudeCode/.claude/skills, user=/Users/keenan/.claude/skills, project=/Users/keenan/Repos/keenan/.claude/skills
+[DEBUG] >>>>> getPluginSkills CALLED <<<<<
+[DEBUG] getPluginSkills: Processing 0 enabled plugins
+[DEBUG] Total plugin skills loaded: 0
+[DEBUG] Total plugin commands loaded: 0
+[DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, duplicates removed: 0)
+[DEBUG] getSkillsIfEnabled returning: 0 skill dir commands, 0 plugin skills
+[DEBUG] Summarizing last 12 of 26 messages (~133934 tokens)
+[DEBUG] Writing to temp file: /Users/keenan/.claude.json.tmp.25677.1762543031930
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 1906 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/keenan/.claude.json.tmp.25677.1762543031930 to /Users/keenan/.claude.json
+[DEBUG] File /Users/keenan/.claude.json written atomically
+[DEBUG] Acquired lock on running version: /Users/keenan/.local/share/claude/versions/2.0.33
+[DEBUG] Writing to temp file: /Users/keenan/.claude.json.tmp.25677.1762543032619
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 1906 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/keenan/.claude.json.tmp.25677.1762543032619 to /Users/keenan/.claude.json
+[DEBUG] File /Users/keenan/.claude.json written atomically
+[DEBUG] Registered 0 hooks from 0 plugins
+[DEBUG] Creating shell snapshot for zsh (/bin/zsh)
+[DEBUG] Looking for shell config file: /Users/keenan/.zshrc
+[DEBUG] Snapshots directory: /Users/keenan/.claude/shell-snapshots
+[DEBUG] Creating snapshot at: /Users/keenan/.claude/shell-snapshots/snapshot-zsh-1762543032784-wv695x.sh
+[DEBUG] Shell binary exists: true
+[DEBUG] Execution timeout: 10000ms
+[DEBUG] Writing to temp file: /Users/keenan/.claude/todos/9fb3b3fb-68c1-4b27-aba9-e8191727a090-agent-9fb3b3fb-68c1-4b27-aba9-e8191727a090.json.tmp.25677.1762543032785
+[DEBUG] Temp file written successfully, size: 2 bytes
+[DEBUG] Renaming /Users/keenan/.claude/todos/9fb3b3fb-68c1-4b27-aba9-e8191727a090-agent-9fb3b3fb-68c1-4b27-aba9-e8191727a090.json.tmp.25677.1762543032785 to /Users/keenan/.claude/todos/9fb3b3fb-68c1-4b27-aba9-e8191727a090-agent-9fb3b3fb-68c1-4b27-aba9-e8191727a090.json
+[DEBUG] File /Users/keenan/.claude/todos/9fb3b3fb-68c1-4b27-aba9-e8191727a090-agent-9fb3b3fb-68c1-4b27-aba9-e8191727a090.json written atomically
+[DEBUG] Total plugin agents loaded: 0
+[DEBUG] Writing to temp file: /Users/keenan/.claude.json.tmp.25677.1762543032913
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 1906 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/keenan/.claude.json.tmp.25677.1762543032913 to /Users/keenan/.claude.json
+[DEBUG] File /Users/keenan/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/keenan/.claude.json.tmp.25677.1762543033124
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 1906 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/keenan/.claude.json.tmp.25677.1762543033124 to /Users/keenan/.claude.json
+[DEBUG] File /Users/keenan/.claude.json written atomically
+[DEBUG] Getting matching hook commands for SessionStart with query: startup
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/keenan/.claude.json.tmp.25677.1762543033162
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 2014 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/keenan/.claude.json.tmp.25677.1762543033162 to /Users/keenan/.claude.json
+[DEBUG] File /Users/keenan/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/keenan/.claude.json.tmp.25677.1762543033201
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 1906 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/keenan/.claude.json.tmp.25677.1762543033201 to /Users/keenan/.claude.json
+[DEBUG] File /Users/keenan/.claude.json written atomically
+[DEBUG] Writing to temp file: /Users/keenan/.claude.json.tmp.25677.1762543033203
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 1906 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/keenan/.claude.json.tmp.25677.1762543033203 to /Users/keenan/.claude.json
+[DEBUG] File /Users/keenan/.claude.json written atomically
+[DEBUG] AutoUpdaterWrapper: Installation type: native
+[DEBUG] performStartupChecks called
+[DEBUG] Trust not accepted for current directory - skipping plugin installations
+[DEBUG] Loaded plugins - Enabled: 0, Disabled: 0, Commands: 0, Agents: 0, Errors: 0
+[DEBUG] Stream started - received first chunk
+[DEBUG] Stream started - received first chunk
+[DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/Users/keenan/.local/share/claude/versions/2.0.33)
+[DEBUG] Shell snapshot created successfully (183520 bytes)
+[DEBUG] Stream started - received first chunk
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+[DEBUG] Found 0 hook matchers in settings
+[DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+[DEBUG] Writing to temp file: /Users/keenan/.claude.json.tmp.25677.1762543039092
+[DEBUG] Preserving file permissions: 100600
+[DEBUG] Temp file written successfully, size: 1963 bytes
+[DEBUG] Applied original permissions to temp file
+[DEBUG] Renaming /Users/keenan/.claude.json.tmp.25677.1762543039092 to /Users/keenan/.claude.json
+[DEBUG] File /Users/keenan/.claude.json written atomically
+[DEBUG] MCP server "ide": Starting connection with timeout of 30000ms
+[DEBUG] MCP server "ide": Successfully connected to ws-ide server in 18ms
+[DEBUG] MCP server "ide": Connection established with capabilities: {"hasTools":true,"hasPrompts":false,"hasResources":false,"serverVersion":{"name":"Claude Code Cursor MCP","version":"2.0.35"}}
+[DEBUG] AutoUpdaterWrapper: Installation type: native
