@@ -1,0 +1,14 @@
+{
+    "mcpServers": {
+        "figma": {
+            "type": "http",
+            "url": "https://mcp.figma.com/mcp"
+        },
+        "gitkraken": {
+            "command": "gk",
+            "args": [
+                "mcp"
+            ]
+        }
+    }
+}
