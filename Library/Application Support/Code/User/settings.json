@@ -16,7 +16,7 @@
   */
   "workbench.settings.editor": "ui", // "ui" or "json"
   //   "workbench.colorTheme": "Evondev Dracula Night Contrast",
-  "workbench.colorTheme": "Blueberry Banana",
+  "workbench.colorTheme": "Flexoki",
   // "workbench.preferredHighContrastLightColorTheme": "Blueberry Banana",
   "workbench.startupEditor": "none",
   "workbench.sideBar.location": "left",
