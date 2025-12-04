@@ -79,10 +79,11 @@ source $ZSH/oh-my-zsh.sh
 ### Personal Configs
 ##########################
 
-# alias for dot file repo
+# dotfiles repo function and alias
 function dotfiles() {
   /usr/bin/git --git-dir=$HOME/Repos/dotfiles/.git --work-tree=$HOME $@
 }
+alias df='dotfiles' # alias for dotfiles function
 
 # python aliases
 alias python=$(which python3.13)
@@ -111,6 +112,8 @@ alias gb='git branch'
 alias ga='git add'
 alias gr='git restore'
 alias gco='git checkout'
+alias gp='git push'
+alias gpl='git pull'
 
 # Docker aliases
 alias dcr='docker compose run --rm'
