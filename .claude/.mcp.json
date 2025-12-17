@@ -9,6 +9,14 @@
             "args": [
                 "mcp"
             ]
+        },
+        "diagnostics": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "mcp-diagnostics"
+            ],
+            "description": "Tool to retrieve IDE diagnostic information"
         }
     }
 }
