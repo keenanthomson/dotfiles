@@ -1,23 +1,24 @@
 {
-    "permissions": {
-        "allow": [
-            "Bash(npm run lint)",
-            "Bash(npm run test:*)",
-            "Read(~/.zshrc)",
-            "WebFetch(domain:code.claude.com)"
-        ],
-        "deny": [
-            "Bash(curl:*)",
-            "Read(./.env)",
-            "Read(./.env.*)",
-            "Read(./secrets/**)"
-        ]
-    },
-    "env": {
-        "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
-    },
-    "statusLine": {
-        "type": "command",
-        "command": "printf '⛏️🔧🔨🛠️: %s' \"$(basename \"$(pwd)\")\""
-    }
+  "env": {
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(npm run lint)",
+      "Bash(npm run test:*)",
+      "Read(~/.zshrc)",
+      "WebFetch(domain:code.claude.com)"
+    ],
+    "deny": [
+      "Bash(curl:*)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)"
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "printf '⛏️🔧🔨🛠️: %s' \"$(basename \"$(pwd)\")\""
+  },
+  "alwaysThinkingEnabled": true
 }
