@@ -1,0 +1,104 @@
+{
+    /*
+    Code Runner
+    */
+    "code-runner.executorMapByGlob": {
+        "*.js": "bun",
+        "*.ts": "bun"
+    },
+    "code-runner.runInTerminal": true,
+    /*
+    Cursor
+    */
+    "cursor.cpp.disabledLanguages": [
+        "plaintext",
+        "markdown",
+        "scminput"
+    ],
+    /*
+    Editor
+    */
+    "editor.accessibilitySupport": "off",
+    "editor.formatOnSave": true, // run formatter on save
+    "editor.guides.indentation": true,
+    "editor.lightbulb.enabled": "off",
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "always" // run linter on save
+    },
+    /*
+    Files
+    */
+    "files.associations": {
+        "*.css": "tailwindcss",
+        "*.yml": "yaml"
+    },
+    "files.exclude": {
+        "**/.git": false // show .git directory
+    },
+    /*
+    Terminal
+    */
+    "bun.debugTerminal.enabled": true,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.fontFamily": "Menlo",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.lineHeight": 1,
+    /*
+    Security
+    */
+    "security.workspace.trust.untrustedFiles": "open", // turn off untrusted file dialog
+    /*
+    Workbench
+    */
+    "workbench.settings.editor": "ui",
+    "workbench.startupEditor": "none",
+    "workbench.sideBar.location": "left",
+    /******************************
+    Language-specific settings
+    ******************************/
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[markdown]": {
+        "editor.formatOnPaste": false,
+        "editor.formatOnSave": false
+        // To check: Edit/save/paste in .md or .rego and confirm no format actions are triggered.
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit",
+        }
+    },
+    "[rego]": {
+        "editor.formatOnPaste": false,
+        "editor.formatOnSave": false
+    },
+    "[terraform]": {
+        "editor.defaultFormatter": "hashicorp.terraform"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    /******************************
+    Extension settings
+    ******************************/
+    /* GitKraken */
+    "gitlens.ai.model": "gitkraken",
+    "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash",
+    "gitlens.integrations.enabled": true,
+    "gitlens.views.commitDetails.files.layout": "tree",
+}
