@@ -36,6 +36,13 @@ git init
 function dotfiles() {
   /usr/bin/git --git-dir=$HOME/Repos/dotfiles/.git --work-tree=$HOME $@
 }
+
+# (optional) add dotfile aliases
+alias df='dotfiles'
+alias dfs='dotfiles status'
+alias dfa='dotfiles add'
+alias dfc='dotfiles commit -m'
+alias dfp='dotfiles push'
 ```
 
 Using a function instead of an alias enables parameter support - the `$@` passes all arguments to the git command, allowing you to use any git subcommand and flags naturally (e.g., `dotfiles add -p`, `dotfiles log --oneline`, `dotfiles commit -am "message"`).

@@ -79,11 +79,15 @@ source $ZSH/oh-my-zsh.sh
 ### Personal Configs
 ##########################
 
-# dotfiles repo function and alias
+# dotfiles repo function and aliases
 function dotfiles() {
   /usr/bin/git --git-dir=$HOME/Repos/dotfiles/.git --work-tree=$HOME $@
 }
-alias df='dotfiles' # alias for dotfiles function
+alias df='dotfiles'
+alias dfs='dotfiles status'
+alias dfa='dotfiles add'
+alias dfc='dotfiles commit -m'
+alias dfp='dotfiles push'
 
 # python aliases
 alias python=$(which python3.13)
