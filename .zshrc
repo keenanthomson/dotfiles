@@ -86,6 +86,7 @@ function dotfiles() {
 alias df='dotfiles'
 alias dfs='dotfiles status'
 alias dfa='dotfiles add'
+alias dfd='dotfiles diff'
 alias dfc='dotfiles commit -m'
 alias dfp='dotfiles push'
 
