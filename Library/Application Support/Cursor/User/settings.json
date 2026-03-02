@@ -71,7 +71,6 @@
     "[markdown]": {
         "editor.formatOnPaste": false,
         "editor.formatOnSave": false
-        // To check: Edit/save/paste in .md or .rego and confirm no format actions are triggered.
     },
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
@@ -101,4 +100,5 @@
     "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash",
     "gitlens.integrations.enabled": true,
     "gitlens.views.commitDetails.files.layout": "tree",
+    "gitlens.launchpad.indicator.enabled": false,
 }

@@ -70,7 +70,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-# plugins=(git)
+plugins=(bun gh)
 
 # run startup script
 source $ZSH/oh-my-zsh.sh
@@ -90,23 +90,8 @@ alias dfd='dotfiles diff'
 alias dfc='dotfiles commit -m'
 alias dfp='dotfiles push'
 
-# python aliases
-alias python=$(which python3.13)
-alias pip='pip3'
-
-# rust aliases
-# alias rustc="$HOME/.cargo/bin/rustc"
-
-# export pyenv to PATH
-export PATH="$HOME/.pyenv/shims:$PATH"
-
-# ensure brew exports are available (they were not in the macOS terminal)
-export HOMEBREW_PREFIX="/opt/homebrew";
-export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
-export HOMEBREW_REPOSITORY="/opt/homebrew";
-export PATH="/opt/homebrew/bin:/opt/homebrew/sbin${PATH+:$PATH}";
-export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
-export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
+# Python alias
+alias python=$(which python3.14)
 
 # GitHub aliases
 alias gc='git commit -m'
@@ -120,7 +105,8 @@ alias gco='git checkout'
 alias gp='git push'
 alias gpl='git pull'
 
-# Docker aliases
+# Docker
+export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
 alias dcr='docker compose run --rm'
 alias dcd='docker compose down'
 # alias dc='~/.run_compose.sh' # need to rewrite script
@@ -132,14 +118,14 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # loads nvm bash_completion
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
-# The next line updates PATH for the Google Cloud SDK.
+# updates PATH for the Google Cloud SDK
 if [ -f '/Users/kt720t/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kt720t/google-cloud-sdk/path.zsh.inc'; fi
 
-# The next line enables shell command completion for gcloud.
+# enable shell command completion for gcloud
 if [ -f '/Users/kt720t/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kt720t/google-cloud-sdk/completion.zsh.inc'; fi
 
-# gcloud config
-export CLOUDSDK_PYTHON=$(which python3.13)
+# gcloud python config
+export CLOUDSDK_PYTHON=$(which python)
 
 # openssl paths
 export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
@@ -161,9 +147,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # ~/.local/bin to PATH
 export PATH="$HOME/.local/bin:$PATH"
-
-# bun completions
-[ -s "/Users/kt720t/.bun/_bun" ] && source "/Users/kt720t/.bun/_bun"
 
 # set zsh as default profile
 export PROFILE="~/.zshrc"
