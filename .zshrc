@@ -150,3 +150,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # set zsh as default profile
 export PROFILE="~/.zshrc"
+
+# ghostty
+export GHOSTTY_CONFIG_DIR="$HOME/Library/Application Support/com.mitchellh.ghostty/config"
+export EDITOR=$(which vim)
