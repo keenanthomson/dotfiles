@@ -127,12 +127,6 @@ if [ -f '/Users/kt720t/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kt
 # gcloud python config
 export CLOUDSDK_PYTHON=$(which python)
 
-# openssl paths
-export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
-export LDFLAGS="-L$(brew --prefix openssl@1.1)/lib" # library file paths
-export CFLAGS="-I$(brew --prefix openssl@1.1)/include" # C compiler flags
-export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@1.1/lib/pkgconfig"
-
 # unixodbc paths
 export LDFLAGS="-L/opt/homebrew/Cellar/unixodbc/2.3.11/lib $LDFLAGS"
 export CPPFLAGS="-I/opt/homebrew/Cellar/unixodbc/2.3.11/include -I/opt/homebrew/opt/openjdk@17/include $CPPFLAGS" #  C/C++ preprocessor header file paths
