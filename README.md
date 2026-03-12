@@ -5,6 +5,7 @@ A clean way to version control your dotfiles without symlinks or moving files fr
 ## The Problem
 
 Traditional dotfile management approaches have drawbacks:
+
 - **Symlinks**: Complex to maintain, can break applications
 - **Copy scripts**: Risk of overwriting changes, manual sync required
 - **Moving files**: Breaks expected paths, requires configuration changes
@@ -16,20 +17,22 @@ This repository uses Git's work tree feature to track dotfiles in their original
 ## How It Works
 
 - Git repository stores metadata in a separate directory
-- Work tree is set to `$HOME` so files stay in their expected locations  
+- Work tree is set to `$HOME` so files stay in their expected locations
 - Custom alias provides easy access to Git commands for dotfile management
 - Only explicitly added files are tracked (avoids noise from other home directory content)
 
 ## Setup
 
 ### 1. Create a Git repository for your dotfiles in your preferred directory
+
 ```bash
-mkdir -p $HOME/dotfiles
-cd $HOME/dotfiles
+mkdir -p $HOME/Repos/dotfiles
+cd $HOME/Repos/dotfiles
 git init
 ```
 
 ### 2. Create the dotfiles function
+
 ```bash
 # Add to your shell config file (e.g., ~/.zshrc)
 
@@ -43,11 +46,13 @@ alias dfs='dotfiles status'
 alias dfa='dotfiles add'
 alias dfc='dotfiles commit -m'
 alias dfp='dotfiles push'
+alias dfpl='dotfiles pull'
 ```
 
 Using a function instead of an alias enables parameter support - the `$@` passes all arguments to the git command, allowing you to use any git subcommand and flags naturally (e.g., `dotfiles add -p`, `dotfiles log --oneline`, `dotfiles commit -am "message"`).
 
 ### 3. Configure Git to hide untracked files
+
 ```bash
 dotfiles config status.showUntrackedFiles no
 ```
@@ -60,6 +65,7 @@ dotfiles config status.showUntrackedFiles no
 ```
 
 ### 4. Configure Git to use `$HOME` as the dotfile repo's worktree
+
 ```bash
 dotfiles config core.worktree $HOME
 ```
@@ -72,11 +78,13 @@ dotfiles config core.worktree $HOME
 ```
 
 ### 5. Checkout the dotfiles repo
+
 ```bash
 dotfiles checkout
 ```
 
 ## Usage
+
 ```bash
 # Check status
 dotfiles status
@@ -102,4 +110,4 @@ dotfiles push
 
 ---
 
-*Inspired by [The best way to store your dotfiles: A bare Git repository explained](https://www.ackama.com/articles/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained/) from Ackama.*
+_Inspired by [The best way to store your dotfiles: A bare Git repository explained](https://www.ackama.com/articles/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained/) from Ackama._

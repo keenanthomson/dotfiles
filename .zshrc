@@ -89,6 +89,7 @@ alias dfa='dotfiles add'
 alias dfd='dotfiles diff'
 alias dfc='dotfiles commit -m'
 alias dfp='dotfiles push'
+alias dfpl='dotfiles pull'
 
 # Python alias
 alias python=$(which python3.14)
