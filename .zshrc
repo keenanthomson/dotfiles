@@ -70,7 +70,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(bun gh uv)
+plugins=(bun gh uv nvm)
 
 # run startup script
 source $ZSH/oh-my-zsh.sh
@@ -116,15 +116,6 @@ alias dcd='docker compose down'
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-# loads nvm bash_completion
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-
-# updates PATH for the Google Cloud SDK
-if [ -f '/Users/kt720t/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kt720t/google-cloud-sdk/path.zsh.inc'; fi
-
-# enable shell command completion for gcloud
-if [ -f '/Users/kt720t/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kt720t/google-cloud-sdk/completion.zsh.inc'; fi
-
 # gcloud python config
 export CLOUDSDK_PYTHON=$(which python)
 
@@ -140,12 +131,12 @@ export LIBRARY_PATH=/opt/homebrew/Cellar/librdkafka/2.2.0/lib
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# ~/.local/bin to PATH
+# ~/.local/bin to PATH (claude, python, etc.)
 export PATH="$HOME/.local/bin:$PATH"
-
-# set zsh as default profile
-export PROFILE="~/.zshrc"
 
 # ghostty
 export GHOSTTY_CONFIG_DIR="$HOME/Library/Application Support/com.mitchellh.ghostty/config"
 export EDITOR=$(which vim)
+
+# rust
+export PATH="$HOME/.cargo/bin:$PATH"

@@ -20,8 +20,8 @@
     "type": "command",
     "command": "printf '⛏️🔧🔨🛠️: %s' \"$(basename \"$(pwd)\")\""
   },
-  "alwaysThinkingEnabled": true,
   "enabledPlugins": {
     "claude-mem@thedotmack": true
-  }
+  },
+  "alwaysThinkingEnabled": true
 }
