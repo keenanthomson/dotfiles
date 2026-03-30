@@ -21,7 +21,8 @@
     "command": "printf '⛏️🔧🔨🛠️: %s' \"$(basename \"$(pwd)\")\""
   },
   "enabledPlugins": {
-    "claude-mem@thedotmack": true
+    "claude-mem@thedotmack": true,
+    "superpowers@claude-plugins-official": true
   },
   "alwaysThinkingEnabled": true
 }

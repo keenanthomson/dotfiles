@@ -140,3 +140,4 @@ export EDITOR=$(which vim)
 
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
+alias claude-mem='bun "/Users/keenan/.claude/plugins/cache/thedotmack/claude-mem/10.5.5/scripts/worker-service.cjs"'
