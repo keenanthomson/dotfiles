@@ -135,10 +135,6 @@
     /******************************
     Extension settings
     ******************************/
-    /* GitKraken */
-    "gitlens.ai.model": "gitkraken",
-    "gitlens.ai.gitkraken.model": "gemini:gemini-2.0-flash",
-    "gitlens.integrations.enabled": true,
-    "gitlens.views.commitDetails.files.layout": "tree",
-    "gitlens.launchpad.indicator.enabled": false,
+    /* CodeLLDB */
+    "lldb.suppressUpdateNotifications": true,
 }

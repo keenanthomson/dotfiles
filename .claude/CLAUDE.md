@@ -4,48 +4,48 @@
 
 ### Code Style
 
-  - Python: Use type hints, follow mypy strict rules, use snake_case naming
-  - Frontend: TypeScript required with explicit return types, use camelCase naming
-  - Imports: Use prettier-plugin-sort-imports (auto-runs on format), avoid direct dayjs imports (use lib/dayjs)
-  - CSS: Use Tailwind utility classes instead of inline styles
-  - Error Handling: Prefer explicit error handling with typed errors
-  - Naming: Use descriptive names
-  - Comments: Explain why not what, avoid duplicating code logic, only add if important
+- Python: Use type hints, follow mypy strict rules, use snake_case naming
+- Frontend: TypeScript required with explicit return types, use camelCase naming
+- Imports: Use prettier-plugin-sort-imports (auto-runs on format), avoid direct dayjs imports (use lib/dayjs)
+- CSS: Use Tailwind utility classes instead of inline styles
+- Error Handling: Prefer explicit error handling with typed errors
+- Naming: Use descriptive names
+- Comments: Explain why not what, avoid duplicating code logic, only add if important
 
 ### Testing
 
-  - General: Prefer parameterized tests that exercise the system and explain code
-  - Jest: Use single top-level describe block per file
-  - Python: Use parameterized library, avoid doc comments in tests, consider parameterization over multiple assertions
+- General: Prefer parameterized tests that exercise the system and explain code
+- Jest: Use single top-level describe block per file
+- Python: Use parameterized library, avoid doc comments in tests, consider parameterization over multiple assertions
 
 ### Philosophy
 
-  - Balance code simplicity (fewer parts) with maintainability (understandable code)
-
+- Balance code simplicity (fewer parts) with maintainability (understandable code)
 
 # MCP Servers
 
 ## Figma MCP server rules
 
-  - The Figma MCP server provides an assets endpoint which can serve image and SVG assets
-  - IMPORTANT: If the Figma MCP server returns a localhost source for an image or an SVG, use that image or SVG source directly
-  - IMPORTANT: DO NOT import/add new icon packages, all the assets should be in the Figma payload
-  - IMPORTANT: do NOT use or create placeholders if a localhost source is provided
-
+- The Figma MCP server provides an assets endpoint which can serve image and SVG assets
+- IMPORTANT: If the Figma MCP server returns a localhost source for an image or an SVG, use that image or SVG source directly
+- IMPORTANT: DO NOT import/add new icon packages, all the assets should be in the Figma payload
+- IMPORTANT: do NOT use or create placeholders if a localhost source is provided
 
 ## Figma MCP Integration Rules
 
 These rules define how to translate Figma inputs into code for this project and must be followed for every Figma-driven change.
 
 ### Required flow (do not skip)
+
 1. Run get_design_context first to fetch the structured representation for the exact node(s).
 2. If the response is too large or truncated, run get_metadata to get the high‑level node map and then re‑fetch only the required node(s) with get_design_context.
 3. Run get_screenshot for a visual reference of the node variant being implemented.
 4. Only after you have both get_design_context and get_screenshot, download any assets needed and start implementation.
-5. Translate the output (usually React + Tailwind) into this project's conventions, styles and framework.  Reuse the project's color tokens, components, and typography wherever possible.
+5. Translate the output (usually React + Tailwind) into this project's conventions, styles and framework. Reuse the project's color tokens, components, and typography wherever possible.
 6. Validate against Figma for 1:1 look and behavior before marking complete.
 
 ### Implementation rules
+
 - Treat the Figma MCP output (React + Tailwind) as a representation of design and behavior, not as final code style.
 - Replace Tailwind utility classes with the project's preferred utilities/design‑system tokens when applicable.
 - Reuse existing components (e.g., buttons, inputs, typography, icon wrappers) instead of duplicating functionality.
