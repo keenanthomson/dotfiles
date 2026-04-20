@@ -113,12 +113,13 @@
         "editor.formatOnSave": false
     },
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.codeActionsOnSave": {
             "source.fixAll": "explicit",
             "source.organizeImports": "explicit",
-        }
+        },
+        "editor.defaultFormatter": "ms-python.black-formatter",
     },
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
     "[rego]": {
         "editor.formatOnPaste": false,
         "editor.formatOnSave": false

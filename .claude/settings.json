@@ -7,7 +7,10 @@
       "Bash(npm run lint)",
       "Bash(npm run test:*)",
       "Read(~/.zshrc)",
-      "WebFetch(domain:code.claude.com)"
+      "WebFetch(domain:code.claude.com)",
+      "mcp__claude-in-chrome__computer",
+      "mcp__claude-in-chrome__read_page",
+      "mcp__claude-in-chrome__tabs_context_mcp"
     ],
     "deny": [
       "Bash(curl:*)",
@@ -21,8 +24,8 @@
     "command": "printf '⛏️🔧🔨🛠️: %s' \"$(basename \"$(pwd)\")\""
   },
   "enabledPlugins": {
-    "claude-mem@thedotmack": true,
-    "superpowers@claude-plugins-official": true
+    "superpowers@claude-plugins-official": true,
+    "claude-mem@thedotmack": true
   },
   "alwaysThinkingEnabled": true
 }
