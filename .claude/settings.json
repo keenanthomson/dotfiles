@@ -24,5 +24,8 @@
     "superpowers@claude-plugins-official": true,
     "claude-mem@thedotmack": true
   },
-  "alwaysThinkingEnabled": true
+  "alwaysThinkingEnabled": true,
+  "autoCompactEnabled": false,
+  "agentPushNotifEnabled": true,
+  "effortLevel": "medium"
 }
